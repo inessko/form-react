@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #787878;
+}
+
+
+.container {
+  width: calc(100% - 100px);
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 100vh;
+background-color: #f5f5f5;
+  font-family: Nanito Sans, sans-serif;
+}
+
+
