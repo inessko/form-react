@@ -36,18 +36,21 @@ function Form () {
 
   return (
     <form action="" className={'general-form'}>
+      <div className="row-field">
       <div className={'input-field'}>
         <label>
           <input type='text' placeholder='Your Name' onChange={(e) => updateValue(e, setName)} value={inputName}/>
         </label>
         <Error classStyle={errorName? 'active': ''} placeholder='Your Name' name={'Введите ваше имя'}/>
       </div>
-      <div className={'input-field'}>
-        <label>
-          <input type='text' placeholder='Your Email' onChange={(e) => updateValue(e, setEmail)} value={inputEmail}/>
-        </label>
-        <Error name={'Введите правильный Email вида inbox@domen.ru'} classStyle={errorEmail? 'active': ''}/>
+        <div className={'input-field'}>
+          <label>
+            <input type='text' placeholder='Your Email' onChange={(e) => updateValue(e, setEmail)} value={inputEmail}/>
+          </label>
+          <Error name={'Введите правильный Email вида inbox@domen.ru'} classStyle={errorEmail? 'active': ''}/>
+        </div>
       </div>
+
       <div className={'input-field'}>
         <label>
           <input type='text' placeholder='Your Title' onChange={(e) => updateValue(e, setTitle)} value={inputTitle}/>
